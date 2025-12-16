@@ -1,0 +1,57 @@
+/* reset.scss */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Сброс стилей списков */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Сброс ссылок */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Сброс кнопок и инпутов */
+button,
+input,
+textarea,
+select {
+	font: inherit;
+	border: none;
+	background: none;
+	outline: none;
+}
+
+/* Сброс таблиц */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Сброс изображений */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Сброс заголовков и параграфов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	font-weight: normal;
+}
+
