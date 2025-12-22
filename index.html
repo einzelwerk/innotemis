@@ -1,13 +1,575 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>innotemis</title>
-  </head>
-  <body>
-    <div id="app"><a href="#">123123</a></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>innotemis</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container-wide">
+					<div class="header__wrapper">
+						<div class="header__img">
+							<img src="logo.svg" alt="" />
+						</div>
+						<div class="header__menu menu">
+							<button class="menu__button"><span></span></button>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Leistungen</a>
+								</li>
+								<li class="menu__item active">
+									<a href="#" class="menu__link">Vorgehen</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Über uns</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Referenzen</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">FAQ</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Kontakt</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="header__button btn-primary"
+							><img src="info.svg" alt="" /><span
+								>Kostenlose Erstberatung</span
+							></a
+						>
+					</div>
+				</div>
+			</header>
+			<section class="hero p-48">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<div class="hero__info">
+							<h1 class="hero__title text-4xl bold">
+								Datenschutz. Verständlich. Praxisnah. Rechtssicher.
+							</h1>
+							<p class="hero__text text-lg">
+								Ich unterstütze Unternehmen, Agenturen und öffentliche Stellen
+								als externer Datenschutzbeauftragter – zuverlässig, verständlich
+								und DSGVO-konform.
+							</p>
+						</div>
+						<a href="#" class="hero__btn btn-primary"
+							>Kostenlose Erstberatung vereinbaren</a
+						>
+					</div>
+				</div>
+				<div class="hero__bg" style="background-image: url(hero-bg.png)"></div>
+			</section>
+			<section class="bullets">
+				<div class="bullets__container">
+					<div class="bullets__wrapper">
+						<div class="bullets__items">
+							<div class="bullets__item item">
+								<div class="item__icon">
+									<img src="portfolio.svg" alt="" />
+								</div>
+								<h3 class="item__title text-sm">Another icon</h3>
+							</div>
+							<div class="bullets__item item">
+								<div class="item__icon">
+									<img src="portfolio.svg" alt="" />
+								</div>
+								<h3 class="item__title text-sm">15 Jahre Erfahrung</h3>
+							</div>
+							<div class="bullets__item item">
+								<div class="item__icon">
+									<img src="portfolio.svg" alt="" />
+								</div>
+								<h3 class="item__title text-sm">
+									Über 100 betreute Unternehmen
+								</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="problems p-80">
+				<div class="problems__container">
+					<div class="problems__wrapper">
+						<div class="problems__content">
+							<div class="problems__info">
+								<h2 class="problems__title text-3xl semi-bold">
+									Datenschutz ist wichtig – aber oft ein echter Zeitfresser.
+								</h2>
+								<p class="problems__text text-lg">
+									Unklare Vorgaben, ständig neue Gesetze, Papierberge und
+									Bußgeldangst: Viele Unternehmen wissen, dass sie etwas tun
+									müssen – aber nicht genau, was und wie.
+								</p>
+							</div>
+							<ul class="problems__items text-base">
+								<li class="problems__item item">
+									<div class="item__icon">
+										<img src="portfolio.svg" alt="" />
+									</div>
+									<div class="item__info">
+										<h3 class="item__title">Unübersichtliche Pflichten</h3>
+										<p class="item__text">Was gilt eigentlich für mich?</p>
+									</div>
+								</li>
+								<li class="problems__item item">
+									<div class="item__icon">
+										<img src="portfolio.svg" alt="" />
+									</div>
+									<div class="item__info">
+										<h3 class="item__title">Fehlende Strukturen</h3>
+										<p class="item__text">
+											Verarbeitungsverzeichnisse, Auftragsverträge & Co.
+										</p>
+									</div>
+								</li>
+								<li class="problems__item item">
+									<div class="item__icon">
+										<img src="portfolio.svg" alt="" />
+									</div>
+									<div class="item__info">
+										<h3 class="item__title">Keine Zeit</h3>
+										<p class="item__text">
+											Datenschutz bleibt liegen, bis es zu spät ist.
+										</p>
+									</div>
+								</li>
+								<li class="problems__item item">
+									<div class="item__icon">
+										<img src="portfolio.svg" alt="" />
+									</div>
+									<div class="item__info">
+										<h3 class="item__title">Angst vor Fehlern</h3>
+										<p class="item__text">
+											Bußgelder oder Reputationsrisiken drohen.
+										</p>
+									</div>
+								</li>
+							</ul>
+							<a href="#" class="problems__btn btn-primary"
+								>Ich sorge für Klarheit und übernehme die Verantwortung.</a
+							>
+						</div>
+						<div class="problems__img">
+							<img src="problems-img.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages p-20">
+				<div class="advantages__container-wide">
+					<div class="advantages__wrapper">
+						<div class="advantages__info">
+							<h2 class="advantages__title text-3xl semi-bold">
+								So läuft unsere Zusammenarbeit ab:
+							</h2>
+							<p class="advantages__text text-lg">
+								Ich nehme Ihnen das Thema Datenschutz Schritt für Schritt ab –
+								transparent, pragmatisch und auf Augenhöhe.
+							</p>
+						</div>
+						<div class="advantages__items text-base">
+							<div class="advantages__item item">
+								<div class="item__head">
+									<div class="item__icon">
+										<img src="document.svg" alt="" />
+									</div>
+									<div class="item__number">01</div>
+								</div>
+								<div class="item__foo">
+									<h3 class="item__title">Analyse & Audit</h3>
+									<p class="item__text">
+										Wir prüfen Ihren aktuellen Stand und identifizieren Lücken.
+									</p>
+								</div>
+							</div>
+							<div class="advantages__item item">
+								<div class="item__head">
+									<div class="item__icon">
+										<img src="route.svg" alt="" />
+									</div>
+									<div class="item__number">02</div>
+								</div>
+								<div class="item__foo">
+									<h3 class="item__title">Maßnahmenplan</h3>
+									<p class="item__text">
+										Sie erhalten klare, verständliche Empfehlungen.
+									</p>
+								</div>
+							</div>
+							<div class="advantages__item item">
+								<div class="item__head">
+									<div class="item__icon">
+										<img src="settings.svg" alt="" />
+									</div>
+									<div class="item__number">03</div>
+								</div>
+								<div class="item__foo">
+									<h3 class="item__title">Umsetzung & Betreuung</h3>
+									<p class="item__text">
+										Ich begleite Sie dauerhaft oder projektbezogen – je nach
+										Bedarf.
+									</p>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="advantages__btn btn-primary"
+							>Jetzt unverbindlich anfragen</a
+						>
+					</div>
+				</div>
+			</section>
+			<section class="services p-80">
+				<div class="services__container">
+					<div class="services__wrapper">
+						<div class="services__left">
+							<h2 class="services__title text-3xl">
+								Meine Leistungen im Überblick
+							</h2>
+						</div>
+						<div class="services__right">
+							<ul class="services__items">
+								<li class="services__item item">
+									<div class="item__icon">
+										<img src="document-scanner.svg" alt="" />
+									</div>
+									<div class="item__wrapper">
+										<div class="item__info">
+											<h3 class="item__title">Digitale Innovation</h3>
+											<p class="item__text">
+												Laufende Betreuung für Unternehmen und öffentliche
+												Stellen
+											</p>
+										</div>
+										<ul class="item__bullets">
+											<li>Rechtssichere Umsetzung der DSGVO</li>
+											<li>Ansprechpartner für Behörden & Mitarbeitende</li>
+											<li>Regelmäßige Audits & Aktualisierungen</li>
+										</ul>
+									</div>
+								</li>
+								<li class="services__item item">
+									<div class="item__icon">
+										<img src="compliance-document.svg" alt="" />
+									</div>
+									<div class="item__wrapper">
+										<div class="item__info">
+											<h3 class="item__title">Datensicherheit</h3>
+											<p class="item__text">
+												Für Unternehmen, die prüfen möchten, wo sie stehen
+											</p>
+										</div>
+										<ul class="item__bullets">
+											<li>Strukturierte Bestandsaufnahme</li>
+											<li>Handlungsempfehlungen mit Priorisierung</li>
+											<li>Optionale Umsetzung durch mich oder Ihr Team</li>
+										</ul>
+									</div>
+								</li>
+								<li class="services__item item">
+									<div class="item__icon">
+										<img src="legal-case.svg" alt="" />
+									</div>
+									<div class="item__wrapper">
+										<div class="item__info">
+											<h3 class="item__title">Datenschutz</h3>
+											<p class="item__text">
+												Damit Datenschutz im Alltag funktioniert
+											</p>
+										</div>
+										<ul class="item__bullets">
+											<li>Online- oder Präsenzschulungen</li>
+											<li>Branchen- und rollenbezogene Inhalte</li>
+											<li>Teilnahmezertifikate inklusive</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="expertise p-20">
+				<div class="expertise__container-wide">
+					<div class="expertise__wrapper">
+						<div class="expertise__head">
+							<h2 class="expertise__title text-3xl">
+								Datenschutz mit Verstand, Erfahrung und persönlicher
+								Verantwortung
+							</h2>
+							<p class="expertise__text text-lg">
+								Ich bin [Vorname Nachname], zertifizierter externer
+								Datenschutzbeauftragter (TÜV) mit über 15 Jahren Erfahrung in
+								Wirtschaft, Agenturen und öffentlicher Verwaltung. Mein
+								Anspruch: Datenschutz soll kein Hindernis sein, sondern Ihr
+								Unternehmen absichern und entlasten – klar, pragmatisch und
+								umsetzbar.
+							</p>
+						</div>
+						<div class="expertise__foo">
+							<div class="expertise__content">
+								<h3 class="expertise__subtitle">
+									Darauf können Sie sich verlassen
+								</h3>
+								<ul class="expertise__items text-base">
+									<li class="expertise__item item">
+										<div class="item__icon"></div>
+										<div class="item__info">
+											<h4 class="item__title">Praxis statt Theorie</h4>
+											<p class="item__text">
+												über 100 erfolgreich betreute Unternehmen
+											</p>
+										</div>
+									</li>
+									<li class="expertise__item item">
+										<div class="item__icon"></div>
+										<div class="item__info">
+											<h4 class="item__title">Klare Kommunikation</h4>
+											<p class="item__text">
+												keine Juristensprache, sondern verständliche Lösungen
+											</p>
+										</div>
+									</li>
+									<li class="expertise__item item">
+										<div class="item__icon"></div>
+										<div class="item__info">
+											<h4 class="item__title">Persönliche Betreuung</h4>
+											<p class="item__text">
+												Sie sprechen immer direkt mit mir, nicht mit einer
+												Hotline
+											</p>
+										</div>
+									</li>
+									<li class="expertise__item item">
+										<div class="item__icon"></div>
+										<div class="item__info">
+											<h4 class="item__title">Rechtssicherheit & Entlastung</h4>
+											<p class="item__text">ich halte Ihnen den Rücken frei</p>
+										</div>
+									</li>
+									<li class="expertise__item item">
+										<div class="item__icon"></div>
+										<div class="item__info">
+											<h4 class="item__title">Transparente Konditionen</h4>
+											<p class="item__text">
+												faire Monatspauschalen, keine versteckten Kosten
+											</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="expertise__img">
+								<img src="expertise-img.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cta p-20">
+				<div class="cta__container-wide">
+					<div class="cta__wrapper">
+						<div class="cta__info">
+							<h2 class="cta__title">
+								Datenschutz, der entlastet – nicht blockiert
+							</h2>
+							<p class="cta__text text-base">
+								Mit über 15 Jahren Erfahrung mache ich Datenschutz verständlich
+								und entlastend – damit Sie sich auf Ihr Kerngeschäft
+								konzentrieren können.
+							</p>
+						</div>
+						<a href="" class="cta__btn btn-primary"
+							>Jetzt unverbindlich anfragen</a
+						>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials p-80">
+				<div class="testimonials__container">
+					<div class="testimonials__content">
+						<div class="testimonials__img">
+							<img src="expertise-img.png" alt="" />
+						</div>
+						<div class="testimonials__block">
+							<h2 class="testimonials__title text-3xl">
+								Was meine Kunden über die Zusammenarbeit sagen
+							</h2>
+							<div class="testimonials__column">
+								<div class="testimonials__slider swiper">
+									<div class="testimonials__wrapper swiper-wrapper">
+										<div class="testimonials__slide swiper-slide item">
+											<h3 class="item__title text-2xl">
+												Wir haben endlich einen Datenschutzbeauftragten, der
+												verständlich erklärt, statt mit Paragraphen zu werfen.
+												Eine echte Erleichterung.
+											</h3>
+											<p class="item__name text-base">
+												— Sabine L., Geschäftsführerin einer Marketingagentur
+											</p>
+										</div>
+										<div class="testimonials__slide swiper-slide item">
+											<h3 class="item__title text-2xl">
+												Wir haben endlich einen Datenschutzbeauftragten, der
+												verständlich erklärt, statt mit Paragraphen zu werfen.
+												Eine echte Erleichterung.
+											</h3>
+											<p class="item__name text-base">
+												— Sabine L., Geschäftsführerin einer Marketingagentur
+											</p>
+										</div>
+										<div class="testimonials__slide swiper-slide item">
+											<h3 class="item__title text-2xl">
+												Wir haben endlich einen Datenschutzbeauftragten, der
+												verständlich erklärt, statt mit Paragraphen zu werfen.
+												Eine echte Erleichterung.
+											</h3>
+											<p class="item__name text-base">
+												— Sabine L., Geschäftsführerin einer Marketingagentur
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__nav">
+									<button type="button" class="swiper-button-prev"></button>
+									<div class="swiper-pagination"></div>
+									<button type="button" class="swiper-button-next"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq p-80">
+				<div class="faq__container">
+					<div class="faq__wrapper">
+						<div class="faq__left">
+							<h2 class="faq__title text-3xl">
+								Antworten auf die häufigsten Fragen
+							</h2>
+						</div>
+						<ul class="faq__items">
+							<li class="faq__item item">
+								<h3 class="item__title text-2xl">
+									Brauche ich überhaupt einen Datenschutzbeauftragten?
+								</h3>
+								<p class="item__text text-base">
+									Wenn Sie regelmäßig personenbezogene Daten verarbeiten oder
+									mehr als 20 Mitarbeiter haben, ist ein Datenschutzbeauftragter
+									gesetzlich vorgeschrieben. Ich helfe Ihnen, diese Pflicht
+									einfach und sinnvoll zu erfüllen.
+								</p>
+							</li>
+							<li class="faq__item item">
+								<h3 class="item__title text-2xl">Was kostet die Betreuung?</h3>
+								<p class="item__text text-base">
+									Die Kosten hängen von Unternehmensgröße und Umfang ab. Ich
+									arbeite mit transparenten Monatspauschalen oder Projektpreisen
+									– ohne versteckte Gebühren.
+								</p>
+							</li>
+							<li class="faq__item item">
+								<h3 class="item__title text-2xl">
+									Wie läuft die Zusammenarbeit ab?
+								</h3>
+								<p class="item__text text-base">
+									Wir starten mit einem kurzen Erstgespräch, danach folgt eine
+									Bestandsaufnahme. Sie erhalten einen klaren Fahrplan mit
+									konkreten Schritten.
+								</p>
+							</li>
+							<li class="faq__item item">
+								<h3 class="item__title text-2xl">
+									Ich habe schon jemanden intern – macht das Sinn?
+								</h3>
+								<p class="item__text text-base">
+									Ja, ich kann Ihre internen Verantwortlichen unterstützen oder
+									die externe Beratung übernehmen – ganz flexibel.
+								</p>
+							</li>
+							<li class="faq__item item">
+								<h3 class="item__title text-2xl">
+									Wie schnell kann es losgehen?
+								</h3>
+								<p class="item__text text-base">
+									In der Regel innerhalb weniger Tage nach dem Erstgespräch.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="contact p-20">
+				<div class="contact__container-wide">
+					<div class="contact__wrapper">
+						<div class="contact__block">
+							<div class="contact__head">
+								<h2 class="contact__title text-3xl">
+									Lassen Sie uns über Ihren Datenschutz sprechen.
+								</h2>
+								<p class="contact__text text-lg">
+									Ich melde mich persönlich innerhalb von 24 Stunden zurück –
+									unverbindlich und vertraulich.
+								</p>
+							</div>
+							<div class="contact__foo">
+								<div class="contact__item item">
+									<div class="item__icon">
+										<img src="phone.svg" alt="" />
+									</div>
+									<div class="item__info">
+										<div class="item__title text-base">Phone</div>
+										<a
+											href="tel:+49 (0) XXX / XXXX XXXX"
+											class="item__link text-xl"
+											>+49 (0) XXX / XXXX XXXX</a
+										>
+									</div>
+								</div>
+								<div class="contact__item item">
+									<div class="item__icon">
+										<img src="phone.svg" alt="" />
+									</div>
+									<div class="item__info">
+										<div class="item__title text-base">Phone</div>
+										<a
+											href="mailto:kontakt@musterdatenschutz.de"
+											class="item__link text-xl"
+											>kontakt@musterdatenschutz.de</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact__calendar"></div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer__wrapper">
+					<div class="footer__container-wide">
+						<div class="footer__block text-base">
+							<span class="footer__copy">
+								© 2025 Innotemis. Datenschutzberatung
+							</span>
+							<ul class="footer__links">
+								<li class="footer__link"><a href="#">Impressum</a></li>
+								<li class="footer__link">
+									<a href="#">Datenschutzerklärung</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__img">
+						<img class="footer__img" src="footer.svg" alt="" />
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script type="module" src="/src/js/main.js"></script>
+	</body>
 </html>
