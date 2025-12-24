@@ -1,5 +1,8 @@
 @media (max-width: 1024px) {
 	.header {
+		&__container-wide {
+			padding-inline: 16px;
+		}
 		.menu {
 			position: relative;
 			z-index: 10;
@@ -106,6 +109,113 @@
 
 		&__button {
 			margin-left: auto;
+		}
+	}
+
+	.hero {
+		&__wrapper {
+			min-height: 550px;
+		}
+	}
+
+	.services {
+		&__wrapper {
+			gap: 48px;
+		}
+
+		.item {
+			&__icon {
+				width: 48px;
+				height: 48px;
+			}
+		}
+	}
+
+	.problems {
+		&__wrapper {
+			gap: 24px;
+			align-items: start;
+		}
+
+		&__img {
+			height: auto;
+			min-height: auto;
+			width: 100%;
+			aspect-ratio: 1/1;
+		}
+	}
+
+	.advantages {
+		&__wrapper {
+			padding: 16px;
+		}
+
+		.item {
+			min-height: auto;
+			padding: 16px;
+
+			&__icon {
+				width: 40px;
+				height: 40px;
+			}
+
+			&__title {
+				font-size: 18px;
+				line-height: normal;
+			}
+
+			&__foo {
+				gap: 12px;
+			}
+		}
+	}
+
+	.expertise {
+		&__wrapper {
+			padding: 32px 24px;
+		}
+
+		.item {
+			padding-left: 0;
+			&__icon {
+				width: 40px;
+				height: 40px;
+
+				&::before {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+
+		&__foo {
+			align-items: start;
+			gap: 48px;
+		}
+
+		&__img {
+			height: auto;
+			aspect-ratio: 1/1;
+		}
+	}
+
+	.testimonials {
+		&__content {
+			gap: 48px;
+		}
+	}
+
+	.faq {
+		&__wrapper {
+			gap: 48px;
+		}
+	}
+
+	.contact {
+		&__calendar {
+			width: 100%;
+			aspect-ratio: auto;
+			height: auto;
 		}
 	}
 }

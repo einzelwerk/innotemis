@@ -185,6 +185,7 @@
 
 		&__title {
 			color: var(--gray-800);
+			text-align: center;
 		}
 
 		&:not(:last-child) {
@@ -246,6 +247,7 @@
 			position: relative;
 			background-color: var(--gray-800);
 			border-radius: 16px;
+			flex-shrink: 0;
 
 			img {
 				position: absolute;
@@ -281,6 +283,7 @@
 		min-height: 640px;
 		position: relative;
 		border-radius: 40px;
+		height: 100%;
 
 		img {
 			position: absolute;
@@ -289,7 +292,12 @@
 			width: 100%;
 			height: 100%;
 			border-radius: 40px;
+			object-fit: cover;
 		}
+	}
+
+	&__btn {
+		white-space: wrap;
 	}
 }
 
@@ -334,6 +342,7 @@
 		color: var(--gray-800);
 		min-height: 300px;
 		height: 100%;
+		gap: 32px;
 
 		&__head {
 			display: flex;
@@ -550,6 +559,7 @@
 		padding: 8px;
 
 		&__icon {
+			flex-shrink: 0;
 			width: 56px;
 			height: 56px;
 			position: relative;
@@ -594,10 +604,11 @@
 
 	&__img {
 		width: 100%;
-		aspect-ratio: 1/1;
 		object-fit: cover;
 		border-radius: 40px;
 		position: relative;
+		max-width: 100%;
+		height: 100%;
 
 		img {
 			width: 100%;
@@ -607,7 +618,7 @@
 			top: 0;
 			left: 0;
 			object-fit: cover;
-			object-position: center;
+			object-position: center top;
 		}
 	}
 }
@@ -661,6 +672,19 @@
 
 	&__img {
 		width: 50%;
+		min-height: 100%;
+		position: relative;
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center top;
+			border-radius: 40px;
+		}
 	}
 
 	&__block {
@@ -821,6 +845,7 @@
 		background-color: var(--gray-50);
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		gap: 48px;
 	}
 
 	&__block {
@@ -902,6 +927,7 @@
 	&__calendar {
 		width: 100%;
 		aspect-ratio: 1/1;
+		height: 100%;
 		border-radius: var(--40px, 40px);
 		background: var(--gray-100, #d9dde4);
 	}

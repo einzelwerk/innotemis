@@ -1,0 +1,199 @@
+@media (max-width: 768px) {
+	.hero {
+		&__wrapper {
+			min-height: 500px;
+		}
+	}
+
+	.bullets {
+		&__wrapper {
+			padding: 16px 0px;
+		}
+
+		&__items {
+			flex-direction: column;
+			gap: 4px;
+		}
+
+		.item {
+			display: grid;
+			grid-template-columns: 20px auto;
+			row-gap: 4px;
+			justify-items: center;
+
+			&::after {
+				grid-column: span 2;
+			}
+		}
+	}
+
+	.problems {
+		&__wrapper {
+			grid-template-columns: 1fr;
+			gap: 48px;
+		}
+
+		&__content {
+			order: 2;
+		}
+
+		&__img {
+			max-height: 400px;
+			img {
+				border-radius: 20px;
+			}
+		}
+	}
+
+	.advantages {
+		&__wrapper {
+			padding-block: 36px;
+			border-radius: 20px;
+		}
+		&__info {
+			max-width: 400px;
+		}
+
+		&__items {
+			grid-template-columns: 1fr;
+			gap: 20px;
+		}
+
+		.item {
+			min-height: 200px;
+			padding: 24px;
+			border-radius: 20px;
+			&__title {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.services {
+		&__wrapper {
+			grid-template-columns: 1fr;
+			gap: 48px;
+		}
+
+		.item {
+			gap: 30px;
+			min-height: auto;
+			border-radius: 20px;
+
+			&__icon {
+				width: 36px;
+				height: 36px;
+			}
+		}
+	}
+
+	.expertise {
+		&__head {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+
+		&__wrapper {
+			gap: 30px;
+			border-radius: 20px;
+		}
+
+		&__foo {
+			grid-template-columns: 1fr;
+			gap: 30px;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+			line-height: normal;
+		}
+
+		&__img {
+			max-height: 400px;
+			img {
+				border-radius: 20px;
+			}
+		}
+
+		&__items {
+			gap: 4px;
+		}
+
+		.item {
+			gap: 16px;
+
+			&__icon {
+				width: 24px;
+				height: 24px;
+
+				&::before {
+					width: 16px;
+					height: 16px;
+				}
+			}
+		}
+	}
+
+	.cta {
+		&__wrapper {
+			flex-direction: column;
+			text-align: center;
+			border-radius: 20px;
+		}
+
+		&__info {
+			align-items: center;
+		}
+
+		&__btn {
+			margin: auto;
+		}
+	}
+
+	.testimonials {
+		&__content {
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		&__block {
+			width: 100%;
+		}
+
+		&__img {
+			width: 100%;
+			aspect-ratio: 1/1;
+			max-height: 400px;
+
+			img {
+				border-radius: 20px;
+			}
+		}
+	}
+
+	.faq {
+		&__wrapper {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.contact {
+		&__wrapper {
+			padding: 20px;
+			grid-template-columns: 1fr;
+			gap: 24px;
+			border-radius: 20px;
+		}
+
+		&__calendar {
+			aspect-ratio: 1/1;
+			border-radius: 20px;
+		}
+	}
+
+	.footer {
+		&__links {
+			gap: 8px;
+		}
+	}
+}

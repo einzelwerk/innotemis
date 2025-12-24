@@ -45,6 +45,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	position: relative;
+	overflow-x: hidden;
 }
 
 [class$='__container'] {
@@ -52,6 +53,10 @@ body {
 	margin: 0 auto;
 	padding: 0 40px;
 	width: 100%;
+
+	@media (max-width: 1024px) {
+		padding: 0 20px;
+	}
 
 	@media (max-width: 744px) {
 		padding: 0 15px;
@@ -64,21 +69,45 @@ body {
 	padding: 0 20px;
 	width: 100%;
 
-	@media (max-width: 744px) {
-		padding: 0 15px;
+	@media (max-width: 1024px) {
+		padding: 0 4px;
 	}
 }
 
 .p-20 {
-	padding: 20px;
+	padding-block: 20px;
+
+	@media (max-width: 1024px) {
+		padding-block: 16px;
+	}
+
+	@media (max-width: 768px) {
+		padding-block: 12px;
+	}
 }
 
 .p-48 {
-	padding: 48px;
+	padding-block: 48px;
+
+	@media (max-width: 1024px) {
+		padding-block: 40px;
+	}
+
+	@media (max-width: 768px) {
+		padding-block: 32px;
+	}
 }
 
 .p-80 {
-	padding: 80px;
+	padding-block: 80px;
+
+	@media (max-width: 1024px) {
+		padding-block: 64px;
+	}
+
+	@media (max-width: 768px) {
+		padding-block: 48px;
+	}
 }
 
 .text-4xl {
@@ -88,6 +117,24 @@ body {
 	font-weight: 700;
 	line-height: 64px;
 	letter-spacing: -0.56px;
+
+	@media (max-width: 1024px) {
+		font-size: 48px;
+		line-height: 56px;
+		letter-spacing: -0.48px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 36px;
+		line-height: 44px;
+		letter-spacing: -0.36px;
+	}
+
+	@media (max-width: 480px) {
+		font-size: 28px;
+		line-height: 32px;
+		letter-spacing: -0.24px;
+	}
 }
 
 .text-3xl {
@@ -97,6 +144,24 @@ body {
 	font-weight: 600;
 	line-height: 44px;
 	letter-spacing: 0.36px;
+
+	@media (max-width: 1024px) {
+		font-size: 32px;
+		line-height: 36px;
+		letter-spacing: 0.32px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 30px;
+		line-height: 32px;
+		letter-spacing: 0.28px;
+	}
+
+	@media (max-width: 480px) {
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 0.24px;
+	}
 }
 
 .text-2xl {
@@ -105,6 +170,16 @@ body {
 	font-style: normal;
 	font-weight: 600;
 	line-height: 32px; /* 133.333% */
+
+	@media (max-width: 1024px) {
+		font-size: 22px;
+		line-height: 28px; /* 140% */
+	}
+
+	@media (max-width: 768px) {
+		font-size: 20px;
+		line-height: 26px; /* 133.333% */
+	}
 }
 
 .text-xl {
@@ -113,6 +188,11 @@ body {
 	font-style: normal;
 	font-weight: 600;
 	line-height: 28px; /* 140% */
+
+	@media (max-width: 1024px) {
+		font-size: 16px;
+		line-height: 24px; /* 150% */
+	}
 }
 
 .text-lg {
@@ -121,6 +201,11 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 26px;
+
+	@media (max-width: 1024px) {
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
 
 .text-sm {
@@ -137,6 +222,11 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 24px;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+		line-height: 20px;
+	}
 }
 
 .btn-primary {
@@ -151,6 +241,7 @@ body {
 	margin-right: auto;
 	transition: all 0.3s ease;
 	white-space: nowrap;
+	text-align: center;
 
 	&:hover {
 		color: var(--gray-100);
