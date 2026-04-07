@@ -59,6 +59,58 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
+	const contactCalendar = document.querySelector('.contact__calendar')
+
+	if (contactCalendar) {
+		let observedIframe = null
+		let resizeObserver = null
+
+		const syncCalendarHeight = iframe => {
+			if (!iframe) return
+
+			const nextHeight = Math.ceil(iframe.getBoundingClientRect().height)
+
+			if (nextHeight > 0) {
+				contactCalendar.style.height = `${nextHeight}px`
+			}
+		}
+
+		const observeMeetergoIframe = () => {
+			const iframe = contactCalendar.querySelector('iframe')
+
+			if (!iframe || iframe === observedIframe) return
+
+			observedIframe = iframe
+
+			syncCalendarHeight(iframe)
+
+			resizeObserver?.disconnect()
+
+			resizeObserver = new ResizeObserver(() => {
+				syncCalendarHeight(iframe)
+			})
+
+			resizeObserver.observe(iframe)
+		}
+
+		const mutationObserver = new MutationObserver(() => {
+			observeMeetergoIframe()
+		})
+
+		mutationObserver.observe(contactCalendar, {
+			childList: true,
+			subtree: true,
+			attributes: true,
+			attributeFilter: ['style', 'height']
+		})
+
+		observeMeetergoIframe()
+
+		window.addEventListener('load', () => {
+			observeMeetergoIframe()
+		})
+	}
+
 	const element = document.querySelector('.header__container-wide')
 
 	window.addEventListener('scroll', () => {

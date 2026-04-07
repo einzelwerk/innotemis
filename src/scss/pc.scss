@@ -846,6 +846,7 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 48px;
+		align-items: start;
 	}
 
 	&__block {
@@ -853,7 +854,6 @@
 		flex-direction: column;
 		gap: 24px;
 		justify-content: space-between;
-		height: 100%;
 		padding-block: 12px;
 	}
 
@@ -869,6 +869,29 @@
 
 	&__text {
 		color: var(--gray-700);
+	}
+
+	&__calendar {
+		height: auto;
+		min-height: 0;
+		border-radius: 32px;
+		overflow: hidden;
+		background: var(--white);
+		border: 1px solid var(--gray-100);
+		box-shadow: 0 20px 40px rgba(21, 24, 28, 0.06);
+	}
+
+	.meetergo-iframe {
+		display: block;
+		width: 100%;
+		min-width: 100% !important;
+	}
+
+	.meetergo-iframe iframe {
+		display: block;
+		width: 100%;
+		height: auto;
+		border: 0;
 	}
 
 	&__foo {
