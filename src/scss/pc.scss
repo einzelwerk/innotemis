@@ -671,32 +671,12 @@
 	}
 
 	&__badge--time {
-		position: relative;
-		padding-left: 40px;
+		gap: 8px;
 
-		&::before {
-			content: '';
-			position: absolute;
-			left: 16px;
-			top: 50%;
-			width: 16px;
-			height: 16px;
-			transform: translateY(-50%);
-			border: 2px solid var(--yellow);
-			border-radius: 999px;
-			box-sizing: border-box;
-		}
-
-		&::after {
-			content: '';
-			position: absolute;
-			left: 23px;
-			top: 50%;
-			width: 5px;
-			height: 5px;
-			transform: translateY(-6px);
-			border-right: 2px solid var(--yellow);
-			border-bottom: 2px solid var(--yellow);
+		img {
+			width: 20px;
+			height: 20px;
+			flex-shrink: 0;
 		}
 	}
 

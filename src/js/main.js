@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		menuButton.addEventListener('click', toggleMenu)
 
+		menuList.querySelectorAll('a[href^="#"]').forEach(link => {
+			link.addEventListener('click', () => {
+				closeMenu()
+			})
+		})
+
 		document.addEventListener('click', e => {
 			if (
 				body.classList.contains('menu-open') &&
@@ -109,6 +115,48 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.addEventListener('load', () => {
 			observeMeetergoIframe()
 		})
+	}
+
+	const menuLinks = [...document.querySelectorAll('.menu__link[href^="#"]')]
+	const menuSections = menuLinks
+		.map(link => {
+			const section = document.querySelector(link.getAttribute('href'))
+
+			if (!section) return null
+
+			return {
+				link,
+				item: link.closest('.menu__item'),
+				section
+			}
+		})
+		.filter(Boolean)
+
+	if (menuSections.length) {
+		const setActiveMenuItem = activeId => {
+			menuSections.forEach(({ item, link, section }) => {
+				const isActive = section.id === activeId
+				item?.classList.toggle('active', isActive)
+				link.setAttribute('aria-current', isActive ? 'page' : 'false')
+			})
+		}
+
+		const updateActiveMenuItem = () => {
+			const offset = 140
+			const scrollPosition = window.scrollY + offset
+			const activeSection =
+				[...menuSections]
+					.reverse()
+					.find(({ section }) => scrollPosition >= section.offsetTop) ??
+				menuSections[0]
+
+			setActiveMenuItem(activeSection.section.id)
+		}
+
+		updateActiveMenuItem()
+		window.addEventListener('scroll', updateActiveMenuItem, { passive: true })
+		window.addEventListener('load', updateActiveMenuItem)
+		window.addEventListener('resize', updateActiveMenuItem)
 	}
 
 	const element = document.querySelector('.header__container-wide')

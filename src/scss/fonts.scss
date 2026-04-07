@@ -1,57 +1,55 @@
-/* =========================
-   Google Sans Flex
-   ========================= */
-
 @font-face {
 	font-family: 'Google Sans Flex';
-	src: url('../fonts/GoogleSansFlex_9pt-Regular.ttf') format('truetype');
+	font-display: swap;
+	font-style: normal;
 	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+	src: url('/assets/fonts/google-sans-flex-v19-latin-regular.woff2')
+		format('woff2');
 }
 
 @font-face {
 	font-family: 'Google Sans Flex';
-	src: url('../fonts/GoogleSansFlex_9pt-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
 	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+	src: url('/assets/fonts/google-sans-flex-v19-latin-500.woff2')
+		format('woff2');
 }
 
 @font-face {
 	font-family: 'Google Sans Flex';
-	src: url('../fonts/GoogleSansFlex_9pt-SemiBold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
 	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
+	src: url('/assets/fonts/google-sans-flex-v19-latin-600.woff2')
+		format('woff2');
 }
-
-/* =========================
-   Zalando Sans Semi Expanded
-   ========================= */
 
 @font-face {
 	font-family: 'Zalando Sans SemiExpanded';
-	src: url('../fonts/ZalandoSansSemiExpanded-Medium.ttf') format('truetype');
+	font-display: swap;
+	font-style: normal;
 	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
+	src: url('/assets/fonts/zalando-sans-semiexpanded-v3-latin-500.woff2')
+		format('woff2');
 }
 
 @font-face {
 	font-family: 'Zalando Sans SemiExpanded';
-	src: url('../fonts/ZalandoSansSemiExpanded-SemiBold.ttf') format('truetype');
+	font-display: swap;
+	font-style: normal;
 	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
+	src: url('/assets/fonts/zalando-sans-semiexpanded-v3-latin-600.woff2')
+		format('woff2');
 }
 
 @font-face {
 	font-family: 'Zalando Sans SemiExpanded';
-	src: url('../fonts/ZalandoSansSemiExpanded-Bold.ttf') format('truetype');
+	font-display: swap;
+	font-style: normal;
 	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
+	src: url('/assets/fonts/zalando-sans-semiexpanded-v3-latin-700.woff2')
+		format('woff2');
 }
 
 body {

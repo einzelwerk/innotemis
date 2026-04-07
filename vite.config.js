@@ -6,13 +6,17 @@ export default defineConfig({
 		polyfillModulePreload: false,
 		outDir: 'dist',
 		rollupOptions: {
-			input: path.resolve(__dirname, 'index.html'),
+			input: {
+				index: path.resolve(__dirname, 'index.html'),
+				impressum: path.resolve(__dirname, 'impressum.html'),
+				datenschutz: path.resolve(__dirname, 'datenschutz.html')
+			},
 			output: {
-				entryFileNames: 'js/[name].js',
-				chunkFileNames: 'js/[name].js',
+				entryFileNames: 'assets/js/[name].js',
+				chunkFileNames: 'assets/js/[name].js',
 				assetFileNames: assetInfo => {
 					if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-						return 'css/[name][extname]'
+						return 'assets/css/[name][extname]'
 					}
 					return 'assets/[name][extname]'
 				}
