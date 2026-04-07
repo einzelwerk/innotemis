@@ -136,17 +136,27 @@
 
 	.cta {
 		&__wrapper {
-			flex-direction: column;
-			text-align: center;
+			min-height: 420px;
+			padding: 28px 24px;
 			border-radius: 20px;
 		}
 
-		&__info {
-			align-items: center;
+		&__content {
+			gap: 24px;
+			max-width: 100%;
+		}
+
+		&__badges {
+			gap: 8px;
+		}
+
+		&__badge {
+			min-height: 36px;
+			padding: 6px 14px;
 		}
 
 		&__btn {
-			margin: auto;
+			margin-right: auto;
 		}
 	}
 
